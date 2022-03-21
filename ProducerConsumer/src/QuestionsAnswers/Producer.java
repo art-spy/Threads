@@ -22,17 +22,22 @@ public class Producer implements Runnable{
             while(questionList.size() == LIMIT) {
                 // Thread.sleep(1000);
                 System.out.println("Too many questions, waiting for Consumer to answer questions.");
-                questionList.wait(); // waits until it gets notified to continue
+
+                // Causes the current thread to wait until it is awakened, typically by being notified or interrupted.
+                questionList.wait();
             }
         }
 
         synchronized (questionList) {
-
             System.out.println("New question: " + questionNo);
             questionList.add(questionNo);
+
             Random random = new Random();
-            Thread.sleep(random.nextInt(2000));
-            questionList.notify(); // notifies the thread to wake up and continue processing
+            Thread.sleep(random.nextInt(1000)); // usually it's faster to ask a question than to answer one
+
+            // Wakes up a single thread that is waiting on this object's monitor.
+            // If any threads are waiting on this object, one of them is chosen to be awakened.
+            questionList.notify();
         }
 
     }

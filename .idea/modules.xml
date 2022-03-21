@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/ConcurrencyUtils-BlockingQueue/ConcurrencyUtils-BlockingQueue.iml" filepath="$PROJECT_DIR$/ConcurrencyUtils-BlockingQueue/ConcurrencyUtils-BlockingQueue.iml" />
       <module fileurl="file://$PROJECT_DIR$/Deadlocks/Deadlocks.iml" filepath="$PROJECT_DIR$/Deadlocks/Deadlocks.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" filepath="$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/ThreadSafety/ThreadSafety.iml" filepath="$PROJECT_DIR$/ThreadSafety/ThreadSafety.iml" />

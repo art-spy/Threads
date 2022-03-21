@@ -19,17 +19,21 @@ public class Consumer implements Runnable{
         synchronized (questionList) {
             while(questionList.isEmpty()) {
                 System.out.println("No questions to answer, waiting for Producer to ask questions.");
-                questionList.wait(); // waits until it gets notified to continue
+
+                // Causes the current thread to wait until it is awakened, typically by being notified or interrupted.
+                questionList.wait();
             }
         }
 
         synchronized (questionList) {
+            Random random = new Random();
+            Thread.sleep(random.nextInt(3000)); // usually it takes longer to answer a question than ask one
+
             System.out.println("Answered question: " + questionList.remove(0));
 
-            Random random = new Random();
-            Thread.sleep(random.nextInt(2000));
-
-            questionList.notify(); // notifies the thread to wake up and continue processing
+            // Wakes up a single thread that is waiting on this object's monitor.
+            // If any threads are waiting on this object, one of them is chosen to be awakened.
+            questionList.notify();
         }
 
     }
