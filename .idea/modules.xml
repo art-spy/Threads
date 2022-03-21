@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ConcurrencyUtils-BlockingQueue/ConcurrencyUtils-BlockingQueue.iml" filepath="$PROJECT_DIR$/ConcurrencyUtils-BlockingQueue/ConcurrencyUtils-BlockingQueue.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Deadlocks/Deadlocks.iml" filepath="$PROJECT_DIR$/Deadlocks/Deadlocks.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" filepath="$PROJECT_DIR$/ProducerConsumer/ProducerConsumer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ThreadSafety/ThreadSafety.iml" filepath="$PROJECT_DIR$/ThreadSafety/ThreadSafety.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ThreadingInventoryManager/ThreadingInventoryManager.iml" filepath="$PROJECT_DIR$/ThreadingInventoryManager/ThreadingInventoryManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/01-ThreadSafety/01-ThreadSafety.iml" filepath="$PROJECT_DIR$/01-ThreadSafety/01-ThreadSafety.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-ThreadingInventoryManager/02-ThreadingInventoryManager.iml" filepath="$PROJECT_DIR$/02-ThreadingInventoryManager/02-ThreadingInventoryManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-ProducerConsumer/03-ProducerConsumer.iml" filepath="$PROJECT_DIR$/03-ProducerConsumer/03-ProducerConsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04-ConcurrencyUtils-BlockingQueue/04-ConcurrencyUtils-BlockingQueue.iml" filepath="$PROJECT_DIR$/04-ConcurrencyUtils-BlockingQueue/04-ConcurrencyUtils-BlockingQueue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05-ThreadPools/05-ThreadPools.iml" filepath="$PROJECT_DIR$/05-ThreadPools/05-ThreadPools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06-Deadlocks/06-Deadlocks.iml" filepath="$PROJECT_DIR$/06-Deadlocks/06-Deadlocks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07-Deadlocks-LockObject/07-Deadlocks-LockObject.iml" filepath="$PROJECT_DIR$/07-Deadlocks-LockObject/07-Deadlocks-LockObject.iml" />
     </modules>
   </component>
 </project>

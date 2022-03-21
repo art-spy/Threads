@@ -19,7 +19,7 @@ public class Consumer implements Runnable{
         while(true){
             try {
                 Random random = new Random();
-                Thread.sleep(random.nextInt(2000)); // usually it takes longer to answer a question than ask one
+                Thread.sleep(random.nextInt(3000)); // usually it takes longer to answer a question than ask one
 
                 // take -> Retrieves and removes the head of this queue, waiting if necessary until an element becomes available.
                 System.out.println("Answered question: " + questionQueue.take());
