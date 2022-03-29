@@ -10,8 +10,9 @@ public class Main {
     public static void main(String[] args) {
         new Thread1(lock1, lock2).start();
         new Thread2(lock1, lock2).start();
-        // Use Thread2Deadlock to cause a deadlock.
-        // new Thread2(lock1, lock2).start();
+
+        // use Thread2Deadlock to cause a deadlock;
+        // new Thread2Deadlock(lock1, lock2).start();
 
     }
 
